@@ -1,0 +1,307 @@
+
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f1e8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #214e34;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Brand logo and title */
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    font-size: 38px;
+    color: #d8e6c3;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin: 0;
+}
+
+.brand-location {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* Header tagline and description */
+header .tagline {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 15px 0 8px;
+}
+
+header p {
+    margin: 8px 0;
+}
+
+/* Navigation bar */
+header nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Navigation hover effect */
+header nav a:hover {
+    background-color: #3c704d;
+}
+
+/* Main content area */
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Content sections */
+main section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Main heading styles */
+main h2,
+main h3 {
+    font-family: Georgia, serif;
+    color: #214e34;
+}
+
+/* Homepage and trail images */
+main img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Links inside main content */
+main a {
+    color: #245d3a;
+}
+
+main a:hover {
+    color: #3c704d;
+}
+
+/* Contact form */
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form button {
+    background-color: #214e34;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font: inherit;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3c704d;
+}
+
+/* Footer background and general layout */
+footer {
+    background-color: #214e34;
+    color: white;
+    text-align: left;
+    padding: 35px 25px 20px;
+    margin-top: 30px;
+}
+
+/* Three-column footer row */
+footer .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.4fr;
+    align-items: start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Footer columns */
+footer .footer-info,
+footer .footer-links,
+footer .footer-contact {
+    min-width: 0;
+}
+
+/* Footer headings */
+footer h2,
+footer h3 {
+    font-family: Georgia, serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+footer .footer-info h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* Footer location text */
+footer .footer-location {
+    color: #d8e6c3;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* Footer descriptions */
+footer .footer-info p,
+footer .footer-contact p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Footer navigation */
+footer .footer-links nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+footer .footer-links nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 3px 0;
+    padding: 2px 0;
+}
+
+/* Footer link hover effects */
+footer .footer-links nav a:hover,
+footer .footer-contact a:hover {
+    color: #d8e6c3;
+    text-decoration: underline;
+}
+
+footer .footer-contact a {
+    color: white;
+}
+
+/* Copyright row */
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1100px;
+    border-top: 1px solid #6b8a73;
+    margin: 30px auto 0;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+footer .footer-bottom p {
+    margin: 5px 0;
+}
+
+/* CSS positioning method 1: relative positioning */
+main section {
+    position: relative;
+}
+
+/* CSS positioning method 2: absolute positioning */
+.section-label {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #d8e6c3;
+    color: #214e34;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .brand-mark {
+        font-size: 30px;
+    }
+
+    .brand-location {
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    header nav a {
+        margin: 3px;
+        padding: 7px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    main section {
+        padding: 16px;
+    }
+
+    /* Stack footer columns on mobile */
+    footer .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
